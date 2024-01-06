@@ -1,8 +1,7 @@
 variable "client_id" {
-    default = "f856d3d9-e135-4885-a8fb-ae7e237c796a"
-}
+    default = ""
 variable "client_secret" {
-    default = "jiS8Q~RPtuKUeMy6FCAgq84d6EkJarujgpAgccSL"
+    default = ""
 }
 
 variable "agent_count" {
@@ -14,19 +13,19 @@ variable "ssh_public_key" {
 }
 
 variable "dns_prefix" {
-    default = "akslab01"
+    default = ""
 }
 
 variable cluster_name {
-    default = "akslab01-rm"
+    default = ""
 }
 
 variable resource_group_name {
-    default = "aks-lab"
+    default = ""
 }
 
 variable location {
-    default = "Central US"
+    default = "centralus"
 }
 
 variable log_analytics_workspace_name {
