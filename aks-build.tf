@@ -65,7 +65,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     client_secret = var.ARM_CLIENT_SECRET   
   }
   network_profile {
-    load_balancer_sku = "Standard"
+    load_balancer_sku = "standard"
     network_plugin    = "kubenet"
   }
 
