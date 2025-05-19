@@ -1,7 +1,7 @@
 variable "client_id" {
   type = string
 }
-variable "client_secret" {
+variable "ARM_CLIENT_SECRET" {
   type = string
 }
 
@@ -10,7 +10,7 @@ variable "agent_count" {
 }
 
 variable "ssh_public_key" {
-  default = "~/.ssh/id_25519.pub"
+  default = "~/.ssh/id_ed25519.pub"
 }
 
 variable "dns_prefix" {
