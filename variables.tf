@@ -1,6 +1,3 @@
-variable "client_id" {
-  type = string
-}
 variable "ARM_CLIENT_SECRET" {
   type = string
 }
