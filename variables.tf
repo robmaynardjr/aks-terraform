@@ -1,19 +1,20 @@
 variable "client_id" {
     default = ""
+}
 variable "client_secret" {
     default = ""
 }
 
 variable "agent_count" {
-    default = 3
+    default = 2
 }
 
 variable "ssh_public_key" {
-    default = "~/.ssh/id_rsa.pub"
+    default = "~/.ssh/id_25519.pub"
 }
 
 variable "dns_prefix" {
-    default = ""
+    default = "spacelift"
 }
 
 variable cluster_name {
@@ -21,24 +22,24 @@ variable cluster_name {
 }
 
 variable resource_group_name {
-    default = ""
+    default = "spacelift-rg"
 }
 
 variable location {
-    default = "centralus"
+    default = "eastus"
 }
 
-variable log_analytics_workspace_name {
-    default = "testLogAnalyticsWorkspaceName"
-}
+# variable log_analytics_workspace_name {
+#     default = "testLogAnalyticsWorkspaceName"
+# }
 
-# refer https://azure.microsoft.com/global-infrastructure/services/?products=monitor for log analytics available regions
-variable log_analytics_workspace_location {
-    default = "centralus"
-}
+# # refer https://azure.microsoft.com/global-infrastructure/services/?products=monitor for log analytics available regions
+# variable log_analytics_workspace_location {
+#     default = "centralus"
+# }
 
-# refer https://azure.microsoft.com/pricing/details/monitor/ for log analytics pricing 
-variable log_analytics_workspace_sku {
-    default = "PerGB2018"
-}
+# # refer https://azure.microsoft.com/pricing/details/monitor/ for log analytics pricing 
+# variable log_analytics_workspace_sku {
+#     default = "PerGB2018"
+# }
 
