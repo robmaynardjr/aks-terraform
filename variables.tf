@@ -1,32 +1,32 @@
 variable "client_id" {
-    default = ""
+  type = string
 }
 variable "client_secret" {
-    default = ""
+  type = string
 }
 
 variable "agent_count" {
-    default = 2
+  default = 2
 }
 
 variable "ssh_public_key" {
-    default = "~/.ssh/id_25519.pub"
+  default = "~/.ssh/id_25519.pub"
 }
 
 variable "dns_prefix" {
-    default = "spacelift"
+  default = "spacelift"
 }
 
-variable cluster_name {
-    default = ""
+variable "cluster_name" {
+  default = ""
 }
 
-variable resource_group_name {
-    default = "spacelift-rg"
+variable "resource_group_name" {
+  default = "spacelift-rg"
 }
 
-variable location {
-    default = "eastus"
+variable "location" {
+  default = "eastus"
 }
 
 # variable log_analytics_workspace_name {
