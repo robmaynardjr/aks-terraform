@@ -15,7 +15,7 @@ variable "dns_prefix" {
 }
 
 variable "cluster_name" {
-  default = ""
+  default = "spacelift-aks"
 }
 
 variable "resource_group_name" {
