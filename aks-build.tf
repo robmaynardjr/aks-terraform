@@ -61,7 +61,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     vm_size    = "Standard_D2_v2"
   }
   service_principal {
-    client_id     = var.client_id
+    client_id     = "f08630de-a906-4485-8487-4e38240ca663"
     client_secret = var.ARM_CLIENT_SECRET   
   }
   network_profile {
